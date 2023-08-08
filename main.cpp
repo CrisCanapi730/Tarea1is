@@ -24,6 +24,11 @@ int resta(int n1, int n2)
     }
     return resta;
 }
+int multiplicacion(int n1, int n2)
+{
+    int multi = n1*n2;
+    return multi;
+}
 
 void menu()
 {
@@ -57,6 +62,16 @@ void menu()
         cin >> n2;
         int res = resta(n1, n2);
         cout << "El resultado es: " << res << endl;
+        break;
+    }
+    case 3:
+    {
+        cout << "Ingrese el numero 1: ";
+        cin >> n1;
+        cout << "Ingrese el numero 2: ";
+        cin >> n2;
+        int mul = multiplicacion(n1, n2);
+        cout << "El resultado es: " << mul << endl;
         break;
     }
     default:
