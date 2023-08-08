@@ -7,6 +7,23 @@ int suma(int n1, int n2)
     suma = n1 + n2;
     return suma;
 }
+int resta(int n1, int n2)
+{
+    int resta;
+    if(n1>n2)
+    {
+        resta = n1-n2;
+    }
+    else if(n2>n1)
+    {
+        resta = n2-n1;
+    }
+    else
+    {
+        resta = 0;
+    }
+    return resta;
+}
 
 void menu()
 {
@@ -30,6 +47,16 @@ void menu()
         cin >> n2;
         int sum = suma(n1, n2);
         cout << "El resultado es: " << sum << endl;
+        break;
+    }
+    case 2:
+    {
+        cout << "Ingrese el numero 1: ";
+        cin >> n1;
+        cout << "Ingrese el numero 2: ";
+        cin >> n2;
+        int res = resta(n1, n2);
+        cout << "El resultado es: " << res << endl;
         break;
     }
     default:
